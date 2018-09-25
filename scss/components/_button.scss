@@ -1,0 +1,18 @@
+.button {
+  margin-bottom: 35px;
+  padding: 20px 75px;
+  border: 2px solid $primary;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  color: $primary;
+  text-transform: uppercase;
+  transition: background-color linear 0.3s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  &:focus {
+    outline: 0;
+  }
+}

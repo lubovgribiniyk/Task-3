@@ -1,0 +1,48 @@
+.numbers {
+  padding: 55px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__count {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    color: $black;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: $md) {
+    padding: 30px 0;
+    &__count {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  @media only screen and (max-width: $sm) {
+    padding: 20px 0;
+    &__container {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &__item {
+      margin-bottom: 15px;
+      width: 33.33%;
+    }
+    &__count {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  @media only screen and (max-width: $xs) {
+    &__item {
+      width: 100%;
+    }
+    &__count {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

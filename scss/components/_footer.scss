@@ -1,0 +1,50 @@
+.footer {
+  border-top: 1px solid #e2e2e2;
+  padding: 36px 0;
+  background-color: $dark-white;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__design {
+    font-size: 14px;
+    font-weight: 300;
+    color: $gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &__link {
+    color: $black;
+    font-weight: 400;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__copy {
+    font-size: 14px;
+    font-weight: 300;
+    color: $gray;
+    opacity: 0.5;
+  }
+  @media only screen and (max-width: $md) {
+    padding: 25px 0;
+    &__design,
+    &__copy {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: $sm) {
+    padding: 20px 0;
+  }
+  @media only screen and (max-width: $xs) {
+    padding: 15px 0;
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__copy {
+      margin-bottom: 10px;
+    }
+  }
+}

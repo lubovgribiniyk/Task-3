@@ -8,6 +8,7 @@
   color: $black;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
   &_underlined {
     &:after {
       position: absolute;
@@ -20,6 +21,7 @@
       transform: translateX(-50%);
     }
     &-left {
+      text-align: left;
       &:after {
         left: 0;
         transform: none;

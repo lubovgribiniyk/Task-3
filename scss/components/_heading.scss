@@ -1,2 +1,21 @@
 .heading {
+  position: relative;
+  margin: 0 0 15px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  color: $black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:after {
+    position: absolute;
+    content: "";
+    background-color: $red;
+    width: 88px;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

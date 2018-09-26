@@ -1,10 +1,11 @@
 .text {
   margin: 0;
-  font-family: $secondary-font;
+  font-family: $main-font;
   font-size: 16px;
-  color: $black;
+  font-weight: 300;
+  color: $main-text;
   line-height: 26px;
-  letter-spacing: 1px;
+  letter-spacing: 0.2px;
 
   @media only screen and (max-width: $sm) {
     font-size: 14px;

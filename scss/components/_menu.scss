@@ -6,6 +6,7 @@
     margin-left: 28px;
   }
   &__link {
+    display: block;
     font-size: 14px;
     font-weight: 700;
     color: $primary;
@@ -14,6 +15,16 @@
     letter-spacing: 1px;
     &:hover {
       text-decoration: underline;
+    }
+  }
+  @media only screen and (max-width: $md) {
+    &__link {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: $xs) {
+    &__link {
+      font-size: 11px;
     }
   }
 }
@@ -33,5 +44,8 @@
     .hamburger__item {
       background-color: darken($white, 20%);
     }
+  }
+  @media only screen and (max-width: $xs) {
+    width: 12px;
   }
 }

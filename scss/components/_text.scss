@@ -5,9 +5,23 @@
   font-weight: 300;
   color: $main-text;
   line-height: 26px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
+  &_indent {
+    margin-bottom: 25px;
+  }
+  @media only screen and (max-width: $md) {
+    font-size: 15px;
+    line-height: 24px;
+    &_indent {
+      margin-bottom: 20px;
+    }
+  }
 
-  @media only screen and (max-width: $sm) {
-    font-size: 14px;
+  @media only screen and (max-width: $xs) {
+    font-size: 13px;
+    line-height: 18px;
+    &_indent {
+      margin-bottom: 15px;
+    }
   }
 }

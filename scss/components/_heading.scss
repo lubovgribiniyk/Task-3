@@ -3,19 +3,40 @@
   margin: 0 0 15px;
   padding-bottom: 10px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 22px;
   color: $black;
   text-transform: uppercase;
   letter-spacing: 1px;
-  &:after {
-    position: absolute;
-    content: "";
-    background-color: $red;
-    width: 88px;
-    height: 1px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  &_underlined {
+    &:after {
+      position: absolute;
+      content: "";
+      background-color: $red;
+      width: 88px;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &-left {
+      &:after {
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+  @media only screen and (max-width: $md) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media only screen and (max-width: $sm) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media only screen and (max-width: $xs) {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
   }
 }

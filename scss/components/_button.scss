@@ -1,7 +1,7 @@
 .button {
   margin-bottom: 35px;
-  padding: 20px 75px;
-  border: 2px solid $primary;
+  padding: 20px 80px;
+  border: 3px solid $primary;
   border-radius: 2px;
   background-color: transparent;
   font-size: 18px;
@@ -14,5 +14,21 @@
   }
   &:focus {
     outline: 0;
+  }
+  @media only screen and (max-width: $md) {
+    margin-bottom: 20px;
+    padding: 15px 60px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+  @media only screen and (max-width: $sm) {
+    margin-bottom: 15px;
+    padding: 10px 40px;
+    border-width: 1px;
+    font-size: 13px;
+  }
+  @media only screen and (max-width: $xs) {
+    padding: 6px 20px;
+    font-size: 11px;
   }
 }

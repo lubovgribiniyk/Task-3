@@ -6,8 +6,9 @@
     display: flex;
     justify-content: space-between;
   }
-  &__img {
+  &__preview {
     margin: 0 auto 15px;
+    padding: 20px;
     border: 2px solid $black;
     border-radius: 50%;
     display: flex;
@@ -17,7 +18,39 @@
     width: 107px;
     box-sizing: border-box;
   }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
   &__item {
     max-width: 360px;
+  }
+  @media only screen and (max-width: $md) {
+    padding: 50px 0;
+    &__item {
+      margin: 0 10px;
+    }
+  }
+  @media only screen and (max-width: $sm) {
+    &__container {
+      flex-direction: column;
+    }
+    &__item {
+      max-width: 400px;
+      margin: 0 auto 15px;
+    }
+    &__preview {
+      height: 90px;
+      width: 90px;
+    }
+  }
+  @media only screen and (max-width: $xs) {
+    padding: 30px 0;
+    &__preview {
+      border-width: 1px;
+      padding: 12px;
+      height: 60px;
+      width: 60px;
+    }
   }
 }

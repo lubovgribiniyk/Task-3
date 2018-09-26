@@ -45,4 +45,53 @@
       text-decoration: none;
     }
   }
+  @media only screen and (max-width: $md) {
+    &__subheading {
+      font-size: 30px;
+      line-height: 32px;
+    }
+    &__heading {
+      margin: 0 0 20px;
+      font-size: 80px;
+      line-height: 90px;
+      letter-spacing: 4px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: $sm) {
+    &__subheading {
+      font-size: 25px;
+      line-height: 28px;
+    }
+    &__heading {
+      margin: 0 0 15px;
+      font-size: 55px;
+      line-height: 60px;
+      letter-spacing: 2px;
+    }
+    &__text {
+      font-size: 11px;
+    }
+    .logo {
+      width: 100px;
+    }
+  }
+  @media only screen and (max-width: $xs) {
+    &__subheading {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__heading {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+    .logo {
+      width: 80px;
+    }
+  }
 }

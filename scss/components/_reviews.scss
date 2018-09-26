@@ -1,0 +1,100 @@
+.reviews {
+  background-color: #4a3949;
+  text-align: center;
+  &__container {
+    padding: 79px 100px;
+    background: url("../../img/bg-reviews.png") no-repeat right bottom;
+  }
+  &__img {
+    margin: 0 auto 20px;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__text {
+    margin: 0 0 15px;
+    font-size: 30px;
+    font-weight: 300;
+    color: $primary;
+    line-height: 44px;
+    opacity: 0.2;
+  }
+  &__info {
+    margin: 0 0 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    color: $primary;
+    line-height: 24px;
+    opacity: 0.2;
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+    &-item {
+      margin: 0 5px;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: $primary;
+      opacity: 0.2;
+      transition: opacity linear 0.3s;
+      &:hover,
+      &_active {
+        opacity: 1;
+      }
+    }
+  }
+  @media only screen and (max-width: $md) {
+    &__img {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: 34px;
+    }
+    &__info {
+      margin: 0 0 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  @media only screen and (max-width: $sm) {
+    &__container {
+      padding: 40px 20px;
+    }
+    &__img {
+      width: 85px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &__info {
+      margin: 0 0 15px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  @media only screen and (max-width: $xs) {
+    &__container {
+      padding: 20px 0;
+    }
+    &__img {
+      margin-bottom: 10px;
+      width: 65px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__info {
+      margin: 0 0 10px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
